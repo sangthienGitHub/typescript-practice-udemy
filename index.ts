@@ -55,3 +55,9 @@ myCar.drive();
 console.log(myCar.color, myCar.year);
 
 //npx typescript --init to create tsconfig.json
+const Component = (target: any) => {
+  console.log(target);
+};
+
+@Component
+class Amimal {}
