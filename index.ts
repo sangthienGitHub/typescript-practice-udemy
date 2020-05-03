@@ -1,12 +1,7 @@
-const myName: string = "Sang";
+const add = (a: number, b: number): number => {
+  return a + b;
+};
 
-const ten: number = 10;
-const negative: number = -100;
-const decimal: number = 10.03;
-
-const yes: boolean = true;
-
-const nothing: null = null;
-const noDefinition: undefined = undefined;
-
-const any: any = "any Type";
+const joinStrings = (a: string, b: string): string => {
+  return a + b;
+};
