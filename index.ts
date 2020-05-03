@@ -53,3 +53,5 @@ const myCar = new Car("red", 2000);
 myCar.drive();
 
 console.log(myCar.color, myCar.year);
+
+//npx typescript --init to create tsconfig.json
