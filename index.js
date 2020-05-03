@@ -13,15 +13,20 @@ var printPost = function (postToPrint) {
     return postToPrint.title + " (" + postToPrint.daysOld + " days old)";
 };
 printPost(post);
-//classes and properties
+//classes and properties, private and public
 var Car = /** @class */ (function () {
     function Car(color, year) {
         this.color = color;
         this.year = year;
     }
     Car.prototype.drive = function () {
-        console.log("Vroom");
+        this.pressPedal();
+        this.putInGear();
+        this.turnWheel();
     };
+    Car.prototype.putInGear = function () { };
+    Car.prototype.pressPedal = function () { };
+    Car.prototype.turnWheel = function () { };
     return Car;
 }());
 var myCar = new Car("red", 2000);

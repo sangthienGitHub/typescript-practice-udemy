@@ -26,19 +26,27 @@ const printPost = (postToPrint: Post) => {
 
 printPost(post);
 
-//classes and properties
+//classes and properties, private and public
 class Car {
-  color: string;
-  year: number;
+  public color: string;
+  public year: number;
 
   constructor(color: string, year: number) {
     this.color = color;
     this.year = year;
   }
 
-  drive() {
-    console.log("Vroom");
+  public drive() {
+    this.pressPedal();
+    this.putInGear();
+    this.turnWheel();
   }
+
+  private putInGear() {}
+
+  private pressPedal() {}
+
+  private turnWheel() {}
 }
 
 const myCar = new Car("red", 2000);
