@@ -61,3 +61,5 @@ const Component = (target: any) => {
 
 @Component
 class Amimal {}
+
+import { Cars } from "./Cars";
