@@ -63,3 +63,25 @@ const Component = (target: any) => {
 class Amimal {}
 
 import { Cars } from "./Cars";
+
+//interface and classes combined
+interface Driveable {
+  speed: number;
+  drive(): string;
+}
+
+class Automobile implements Automobile {
+  speed = 10;
+
+  drive() {
+    return `I am driving at ${this.speed}`;
+  }
+}
+
+const myAuto = new Automobile();
+
+const startDriving = (vehicle: Driveable) => {
+  vehicle.drive();
+};
+
+startDriving(myAuto);
